@@ -1,0 +1,21 @@
+<div class="submit_contents">
+  <%= form_tag("/groups/#{params[:id]}/shifts", :method => :post) do%>
+    <% @schedules.each do |i|%>
+      <% if @set_time[i.wday].first != "なし" %>
+        <div class="panel panel-default">
+          <div class="panel-body"><%= i %></div>
+          <div class="panel-footer">
+            <%= select "schedules[#{i}]", :shift_time, @set_time[i.wday].map{|t| [t, t]} %>
+          </div>
+        </div>
+      <%end%>
+    <% end %>
+    <div class="submit">
+      <button type="submit" class="btn btn-primary">送信</button>
+    </div>
+  <% end %>
+</div>
+
+
+
+

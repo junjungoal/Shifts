@@ -1,0 +1,229 @@
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap.min
+ */
+
+.box{
+  margin:200px;
+}
+
+.submit_bar{
+  text-align: center;
+}
+
+.group_search{
+  text-align: center;
+}
+
+.submit_shift{
+  text-align: center;
+  margin: 50px;
+}
+
+.btn-primary{
+  min-width: 100px;
+}
+
+.index_box{
+  margin:30px;
+}
+
+.acount_box{
+  margin:40px;
+}
+
+.group_form_submit{
+  margin:40px;
+  text-align: center;
+}
+
+.group_form{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.group_form input {
+  width:1000px;
+  height:50px;
+}
+
+.group_form_submit button{
+  width:100px;
+}
+
+.group_h1{
+  text-align: center;
+}
+
+.group_form h1{
+  margin-bottom: 50px;
+  font-size: 60px;
+}
+
+.pr_box{
+  border: solid 1px black;
+  padding-top:600px;
+  margin: 40px 400px 0 400px;
+}
+
+.submit_contents{
+  margin:60px;
+}
+
+.panel-heading a{
+  color:white;
+}
+
+.panel-heading a:hover, a:link  {
+  color:white;
+
+}
+
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+
+/* fontawesome */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* Simple Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* body */
+body {
+  background: #e9e9e9;
+  color: #5e5e5e;
+  font: 400 87.5%/1.5em 'Open Sans', sans-serif;
+}
+
+/* Form Layout */
+.form-wrapper {
+  background: #fafafa;
+  margin: 3em auto;
+  padding: 0 1em;
+  max-width: 370px;
+}
+
+h1 {
+  text-align: center;
+  padding: 1em 0;
+}
+
+form {
+  padding: 0 1.5em;
+}
+
+.form-item {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+.form-item input {
+  background: #fafafa;
+  border: none;
+  border-bottom: 2px solid #e9e9e9;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 50px;
+  transition: border-color0.3s;
+  width: 100%;
+}
+
+.form-item input:focus {
+  border-bottom: 2px solid #c0c0c0;
+  outline: none;
+}
+
+.button-panel {
+  margin: 2em 0 0;
+  width: 100%;
+}
+
+.button-panel .button {
+  background: #f16272;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background: 0.3s ease-in-out;
+  width: 100%;
+}
+
+.button:hover {
+  background: #ee3e52;
+}
+
+.form-footer {
+  font-size: 1em;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.form-footer a {
+  color: #8c8c8c;
+  text-decoration: none;
+  transition: border-color: 0.3s;
+}
+
+.form-footer a:hover {
+  border-bottom: 1px dotted #8c8c8c;
+}
+
+.popover .popover-title {
+    background: none;
+    border-bottom: medium none !important;
+    margin: 0 !important;
+    padding: 10px 14px 0 !important;
+}
+#display a:visited{
+  display: block;
+  color:black !important;
+}
+
+#display a:link{
+  display: block;
+  color:#428bca;
+}
+
+.shift_delete:link,.shift_delete:visited {
+  float:right;
+  color:black;
+}
+
+.locate_button{
+  float:right;
+  width:90px;
+  height:30px;
+}
+
+.approval_area_size{
+  margin:40px;
+}
+
+.link_color:hover{
+  color:black !important;
+}
+.link_color:link{
+  color:black !important;
+}

@@ -1,0 +1,9 @@
+<h2 class="text-center">グループ作成</h2>
+<div class="team_name">
+  <%= form_tag('/groups', :method => :post) do%>
+    <span><label>グループ名</label><input type="text" name="name" ></span><br>
+    詳細：<br>
+    <textarea name="contents"  class="form-control" rows="4" cols="40">(住所など)</textarea>
+    <button type="submit" class="btn btn-primary">決定</button>
+  <%end%>
+</div>

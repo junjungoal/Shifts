@@ -1,0 +1,5 @@
+<div class="host_new">
+  <%= form_tag("/groups/#{params[:id]}/decide", :method => :patch) do %>
+    <button type="submit" class="btn btn-primary">作成する</button>
+  <% end %>
+</div>
