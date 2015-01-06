@@ -30,9 +30,10 @@ gem 'compass-rails'
 gem 'sprockets', '2.11.0'
 gem 'devise'
 gem 'momentjs-rails'
-gem 'sqlite3', :group => [:development, :test]
-gem 'pg', :group => [:production]
-gem 'therubyracer', platforms: :ruby
+group :production do
+    gem 'pg', '0.15.1'
+    gem 'rails_12factor', '0.0.2'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

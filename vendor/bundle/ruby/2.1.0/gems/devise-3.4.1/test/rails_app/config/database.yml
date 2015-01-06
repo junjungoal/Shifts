@@ -16,3 +16,12 @@ test:
 production:
   adapter: sqlite3
   database: ":memory:"
+
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: your_database
+  port: 5432
+  username: yamada jun
+  password: socc111097827
