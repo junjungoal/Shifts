@@ -21,7 +21,7 @@ production:
 production:
   adapter: postgresql
   encoding: utf8
-  database: your_database
+  database: dak6juarkbr44g
   port: 5432
-  username: yamada jun
-  password: socc111097827
+  username: qmraqkfuuvucuy
+  password: 1KEm61g-uuigzXYDdqA1JM3PEM
