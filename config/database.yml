@@ -31,10 +31,10 @@ test:
 production:
   adapter: postgresql
   encoding: utf8
-  database: your_database
+  database:  postgres://qmraqkfuuvucuy:1KEm61g-uuigzXYDdqA1JM3PEM@ec2-54-83-33-196.compute-1.amazonaws.com:5432/dak6juarkbr44g
   port: 5432
-  username: your_username
-  password: your_password
+  username: yamada jun
+  password: socc111097827
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
