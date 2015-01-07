@@ -30,10 +30,14 @@ gem 'compass-rails'
 gem 'sprockets', '2.11.0'
 gem 'devise'
 gem 'momentjs-rails'
-group :production do
-    gem 'pg', '0.15.1'
-    gem 'rails_12factor', '0.0.2'
-end
+# Herokuの本番(production)環境ではPostgresqlを使用する
+gem 'sqlite3', :group => [:development, :test]
+gem 'pg', :group => [:production]
+
+# コメントアウト
+gem 'therubyracer', platforms: :ruby
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
