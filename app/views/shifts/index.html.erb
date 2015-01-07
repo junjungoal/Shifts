@@ -38,7 +38,7 @@
         </table>
       </div>
     </div>
-  <% else %>
+  <% elsif current_user.nature == 1 %>
     <div id="myTabContent" class="tab-content">
       <div class="tab-pane fade in active" id="tab1">
         <% @date.each do |date| %>
