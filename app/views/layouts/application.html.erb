@@ -4,11 +4,8 @@
   <title>Shifts</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag "css/bootstrap.css" %>
   <%= stylesheet_link_tag "css/calendar.css" %>
   <%= javascript_include_tag "underscore-min.js" %>
-  <%= javascript_include_tag "js/bootstrap.js" %>
   <%= javascript_include_tag "js/language/ja-JP.js" %>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
 
@@ -29,12 +26,13 @@
           <!-- 右側 -->
           <ul class="nav navbar-nav navbar-right">
             <% if current_user.group_id.present? %>
+              <li><a><%= current_user.group.name %></a></li>
               <li><a href="/groups/<%= current_user.group_id %>/hosts/new">シフト作成</a></li>
               <% if @user.present? %>
                 <li><a href="/hosts/approval">承認待ち</a></li>
               <% end %>
               <li><a href="/groups/<%=current_user.group_id%>/acount_setting">アカウント設定</a></li>
-            <%end%>
+            <% end %>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= current_user.username  %><span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -45,7 +43,7 @@
         </div>
       </div>
     </nav>
-  <%else%>
+  <% else %>
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -56,13 +54,16 @@
             <li class="active"><a href="/users/<%= current_user.id %>/shifts">Home <span class="sr-only">(current)</span></a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            <% if current_user.group_id.present? %>
+            <li><a><%= current_user.group.name %></a></li>
+            <% end %>
             <% if current_user.status.present? && current_user.status == 1 %>
               <li><a>申請中</a></li>
             <%elsif current_user.status.present? && current_user.status == 2 %>
               <li><a href="/groups/<%= current_user.group_id %>/shifts/new">シフト提出</a></li>
             <% else %>
               <li><a href="/search">グループ検索</a></li>
-            <%end%>
+            <% end %>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= current_user.username  %><span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -73,8 +74,8 @@
         </div>
       </div>
     </nav>
-  <%end%>
-<%end%>
+  <% end %>
+<% end %>
 
 <%= yield %>
 

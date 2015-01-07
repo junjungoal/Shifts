@@ -5,7 +5,6 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_filter :configure_permitted_parameters, if: :devise_controller?
    def configure_permitted_parameters
-   #strong parametersを設定し、usernameを許可
-     devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:username, :email, :password, :password_confirmation, :nature) }
+    devise_parameter_sanitizer.for(:sign_up).push(:username, :nature)
   end
 end

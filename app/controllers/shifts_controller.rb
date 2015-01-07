@@ -13,7 +13,7 @@ class ShiftsController < ApplicationController
   end
 
   def search
-     @group_name = Group.where(name: search_params[:keyword])
+     @group_name = Group.where('name LIKE(?)', "%#{search_params[:keyword]}%").limit(20)
      @groups = User.find(current_user.id).group
   end
 
