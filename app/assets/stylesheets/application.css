@@ -141,7 +141,7 @@ form {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   height: 50px;
-  transition: border-color0.3s;
+/*  transition: border-color0.3s;*/
   width: 100%;
 }
 
