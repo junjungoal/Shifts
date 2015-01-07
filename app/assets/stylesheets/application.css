@@ -182,7 +182,7 @@ form {
 .form-footer a {
   color: #8c8c8c;
   text-decoration: none;
-  transition: border-color: 0.3s;
+  /*transition: border-color: 0.3s;*/
 }
 
 .form-footer a:hover {
