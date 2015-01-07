@@ -36,6 +36,9 @@ gem 'pg', :group => [:production]
 
 # コメントアウト
 gem 'therubyracer', platforms: :ruby
+group :production, :staging do
+     gem 'rails_12factor'
+end
 
 
 # Use ActiveModel has_secure_password

@@ -28,13 +28,21 @@ test:
   <<: *default
   database: shifts_test
 
+# production:
+#   adapter: postgresql
+#   encoding: utf8
+#   database:  postgres://qmraqkfuuvucuy:1KEm61g-uuigzXYDdqA1JM3PEM@ec2-54-83-33-196.compute-1.amazonaws.com:5432/dak6juarkbr44g
+#   port: 5432
+#   username:
+#   password:
 production:
   adapter: postgresql
   encoding: utf8
-  database:  postgres://qmraqkfuuvucuy:1KEm61g-uuigzXYDdqA1JM3PEM@ec2-54-83-33-196.compute-1.amazonaws.com:5432/dak6juarkbr44g
+  database: dak6juarkbr44g
   port: 5432
-  username: yamada jun
-  password: socc111097827
+  username: qmraqkfuuvucuy
+  password: 1KEm61g-uuigzXYDdqA1JM3PEM
+
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -55,8 +63,6 @@ production:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: shifts_production
-  username: shifts
-  password: <%= ENV['SHIFTS_DATABASE_PASSWORD'] %>
+# production:
+#   <<: *default
+#   database: shifts_production
