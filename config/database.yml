@@ -36,13 +36,14 @@ test:
 #   username:
 #   password:
 production:
-  adapter: mysql2
+  adapter: mysql
   encoding: utf8
-  database: heroku_4c68c4023242148?reconnect=true
+  database: heroku_b02b18457278ab1?reconnect=true
   port: 5432
-  username: b55d8bb67165eb
-  password: 2e0289e5
+  username: b6739679d8a035
+  password: 3305b84f
 
+ #mysql://b6739679d8a035:3305b84f@us-cdbr-iron-east-01.cleardb.net/heroku_b02b18457278ab1?reconnect=true
 
 
 
