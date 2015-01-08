@@ -36,12 +36,13 @@ test:
 #   username:
 #   password:
 production:
-  adapter: postgresql
+  adapter: mysql2
   encoding: utf8
-  database: d6jj8ank7k1r5m
+  database: heroku_4c68c4023242148?reconnect=true
   port: 5432
-  username: dpumrldfulcxun
-  password: FM4XJzHO2pcHMpYzCBVzpw-MQR
+  username: b55d8bb67165eb
+  password: 2e0289e5
+
 
 
 
