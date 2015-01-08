@@ -38,7 +38,7 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: heroku_b02b18457278ab1?reconnect=true
+  database: hus-cdbr-iron-east-01.cleardb.net
   port: 5432
   username: b6739679d8a035
   password: 3305b84f
