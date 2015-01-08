@@ -28,22 +28,17 @@ test:
   <<: *default
   database: shifts_test
 
-# production:
-#   adapter: postgresql
-#   encoding: utf8
-#   database:  postgres://qmraqkfuuvucuy:1KEm61g-uuigzXYDdqA1JM3PEM@ec2-54-83-33-196.compute-1.amazonaws.com:5432/dak6juarkbr44g
-#   port: 5432
-#   username:
-#   password:
+
 production:
-  adapter: mysql
+  adapter: postgresql
   encoding: utf8
-  database: hus-cdbr-iron-east-01.cleardb.net
+  database: dlnedq333aaeh
   port: 5432
-  username: b6739679d8a035
-  password: 3305b84f
+  username: bbvkrvdygcvzok
+  password: RatTiJFVNssIB5RYqw9GvXe8e3
 
  #mysql://b6739679d8a035:3305b84f@us-cdbr-iron-east-01.cleardb.net/heroku_b02b18457278ab1?reconnect=true
+#postgres://bbvkrvdygcvzok:RatTiJFVNssIB5RYqw9GvXe8e3@ec2-107-20-229-112.compute-1.amazonaws.com:5432/dlnedq333aaeh
 
 
 
