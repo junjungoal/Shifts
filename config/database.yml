@@ -38,10 +38,11 @@ test:
 production:
   adapter: postgresql
   encoding: utf8
-  database: dak6juarkbr44g
+  database: d6jj8ank7k1r5m
   port: 5432
-  username: qmraqkfuuvucuy
-  password: 1KEm61g-uuigzXYDdqA1JM3PEM
+  username: dpumrldfulcxun
+  password: FM4XJzHO2pcHMpYzCBVzpw-MQR
+
 
 
 # As with config/secrets.yml, you never want to store sensitive information,
