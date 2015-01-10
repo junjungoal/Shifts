@@ -31,8 +31,8 @@ gem 'sprockets', '2.11.0'
 gem 'devise'
 gem 'momentjs-rails'
 # Herokuの本番(production)環境ではPostgresqlを使用する
-gem 'sqlite3', :group => [:development, :test]
-gem 'pg', :group => [:production]
+# gem 'sqlite3', :group => [:development, :test]
+# gem 'pg', :group => [:production]
 
 # コメントアウト
 gem 'therubyracer', platforms: :ruby
