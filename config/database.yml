@@ -30,12 +30,13 @@ test:
 
 
 production:
-  adapter: postgresql
+  adapter: mysql2
   encoding: utf8
-  database: dlnedq333aaeh
+  database: heroku_9a4c72c7aa1a43c
   port: 5432
-  username: bbvkrvdygcvzok
-  password: RatTiJFVNssIB5RYqw9GvXe8e3
+  username: be20dbb92939ef
+  password: fb8b9014
+
 
  #mysql://b6739679d8a035:3305b84f@us-cdbr-iron-east-01.cleardb.net/heroku_b02b18457278ab1?reconnect=true
 #postgres://bbvkrvdygcvzok:RatTiJFVNssIB5RYqw9GvXe8e3@ec2-107-20-229-112.compute-1.amazonaws.com:5432/dlnedq333aaeh
