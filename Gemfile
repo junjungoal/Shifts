@@ -33,7 +33,7 @@ gem 'momentjs-rails'
 # Herokuの本番(production)環境ではPostgresqlを使用する
 # gem 'sqlite3', :group => [:development, :test]
 # gem 'pg', :group => [:production]
-
+gem 'mysql'
 # コメントアウト
 gem 'therubyracer', platforms: :ruby
 group :production, :staging do
