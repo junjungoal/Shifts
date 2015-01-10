@@ -36,6 +36,7 @@ production:
   port: 5432
   username: be20dbb92939ef
   password: fb8b9014
+  host: us-cdbr-iron-east-01.cleardb.net
 
 
  #mysql://b6739679d8a035:3305b84f@us-cdbr-iron-east-01.cleardb.net/heroku_b02b18457278ab1?reconnect=true
