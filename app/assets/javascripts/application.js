@@ -14,12 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require moment
-//= require_tree .
 //= require bootstrap.min
-
+//= require bootstrap-timepicker.js
+//= require_tree .
 $(function(){
     $("#confirm").click(function(){
       alert("申請しますか?");
     });
+    $('#tp1').timepicker({});
 
 });

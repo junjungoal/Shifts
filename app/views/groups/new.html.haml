@@ -1,0 +1,11 @@
+%h2.text-center グループ作成
+.team_name
+  = form_tag('/groups', :method => :post) do
+    %span
+      %label グループ名
+      %input{:name => "name", :type => "text"}/
+    %br/
+    詳細：
+    %br/
+    %textarea.form-control{:cols => "40", :name => "contents", :placeholder => "住所など", :rows => "4"}
+    %button.btn.btn-primary{:type => "submit"} 決定

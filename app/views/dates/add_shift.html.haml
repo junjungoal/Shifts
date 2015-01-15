@@ -1,0 +1,5 @@
+.list-group.approval_area_size
+  %li.list-group-item.active.list-group-item-success
+    シフトに入れる人
+  - @shift_people.each do |i|
+    %li.list-group-item= link_to "#{i.user.username}", "/dates/#{params[:date]}/#{i.id}" , :method => :patch ,:class => "link_color"
