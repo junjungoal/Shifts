@@ -15,6 +15,9 @@ Rails.application.routes.draw do
       post 'acount_setting_decide' => 'hosts#acount_setting_decide'
     end
   end
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
   resources :groups, :only => [:new, :create]
   get 'search' => 'shifts#search'
   get '/dates/:date' => 'dates#show'
