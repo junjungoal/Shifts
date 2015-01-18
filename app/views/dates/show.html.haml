@@ -1,0 +1,13 @@
+.index_box
+  - @setting.each do |i|
+    .panel.panel-primary
+      .panel-heading
+        = putstime(i)
+      / List group
+      %ul.list-group
+        - @schedules.each do |t|
+          - if t.shift_time == i
+            %li.list-group-item
+              = t.user.username
+              = link_to "削除", "/dates/#{params[:date]}/#{t.id}", :method => :delete , class: "shift_delete"
+      %a.list-group-item{:href => "/dates/#{params[:date]}/add_shift/#{i}"} 追加
