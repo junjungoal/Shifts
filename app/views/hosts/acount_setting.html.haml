@@ -1,0 +1,21 @@
+%p.text-center シフトの時間区分を設定してください
+%p.text-center
+  例) 9時~13時 => 9-13
+  .acount_box
+    = form_tag("/groups/#{params[:id]}/acount_setting_decide", :method => :post) do
+      - date.each do|i|
+        .panel.panel-default
+          .panel-heading
+            = i
+            = hidden_field_tag 'posts[][day]', "#{i}"
+          .panel-body
+            %label 最大人数:
+            = text_field_tag 'posts[][people][]'
+            %br/
+            %label 時間区分:
+            %br/
+            - (1..4).each do |i|
+              = text_field_tag 'posts[][time][]'
+          = hidden_field_tag 'posts[][time][]',"なし"
+      .submit_shift
+        %input.btn-primary{:type => "submit"}/

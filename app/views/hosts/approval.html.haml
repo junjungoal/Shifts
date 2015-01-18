@@ -1,0 +1,9 @@
+.panel.panel-primary.approval_area_size
+  .panel-heading 承認待ちユーザー
+  %ul.list-group
+    - @user.each do |i|
+      = form_tag("/hosts/user_add", :method => :patch) do
+        %li.list-group-item
+          = i.username
+          %input{:name => "id", :type => "hidden", :value => i.id}/
+          %button.btn.btn-primary.locate_button{:type => "submit"} 承認
